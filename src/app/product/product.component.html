@@ -3,19 +3,11 @@
     <ul>
         <li><a [routerLink]="['/home']">Home</a></li>
         <li><a [routerLink]="['/products']">Locates</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li><a [routerLink]="['/about']">About</a></li>
     </ul>
 </div>
 
 <div class="content">
-    <div class="searchBar">
-    <input type="text" [(ngModel)]="search" 
-    (input)="filterData()" 
-    placeholder="Search by name..."
-    class="searchInput">
-    </div>
-
     <ul class="item">
         <li *ngFor="let item of myData$ | async">
             <div>

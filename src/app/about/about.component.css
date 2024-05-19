@@ -33,3 +33,8 @@ body {
 .sidebar ul li a:hover {
     background-color: #575757;
 }
+
+.content {
+    margin-left: 220px;
+    margin-top: 40px;
+}
